@@ -5807,8 +5807,8 @@ void secuencial_Efecto5(void) {
 }
 
 void secuencial_Efecto6(void) {
-    volatile unsigned int m=0,n=0;
-    for (int i = 0; i < 2; i++) {
+    volatile unsigned int m=2,n=4;
+    for (int i = 2; i < 5; i++) {
         LATD = m+n;
         m += (1 << i) & 0x0f;
         n += (1 << (4-i)) & 0xf0;

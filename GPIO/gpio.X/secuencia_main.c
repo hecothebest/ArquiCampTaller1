@@ -127,8 +127,9 @@ void secuencial_Efecto4(void) {
 }
 
 void secuencial_Efecto5(void) {
-    for (int i = 1, j = 4; i < 3; i++, j--) {
-        LATD = (1 << i) + (1 << j);
+    for (int i = 0, j=2; i < 8; i++,j++) {
+        LATD = (1 << i) + (1 << i+1)+(1 << i+2)+(1 << i+3)+(1 << i+4);
+       
         if(velocidad==1){__delay_ms(50);}
         else if(velocidad==2){__delay_ms(100);}
         else if(velocidad==3){__delay_ms(200);}
@@ -140,13 +141,10 @@ void secuencial_Efecto5(void) {
         }
     }
 }
-
 void secuencial_Efecto6(void) {
-    volatile unsigned int m=0,n=0;
-    for (int i = 2; i < 5; i++) {
-        LATD = m+n;
-        m += (1 << i) & 0x0f;
-        n += (1 << (4-i)) & 0xf0;
+ for (int i = 0, j=2; i < 8; i++,j++) {
+        LATD = (1 << i) + (1 << j);
+       
         if(velocidad==1){__delay_ms(50);}
         else if(velocidad==2){__delay_ms(100);}
         else if(velocidad==3){__delay_ms(200);}

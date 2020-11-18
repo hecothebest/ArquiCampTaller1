@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.31 build 20201012212115 
-                                                                                               Wed Nov 18 17:49:39 2020
+                                                                                               Wed Nov 18 18:09:43 2020
 
 Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1 
      1                           	processor	18F4550
@@ -244,11 +244,11 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    230  007968  0E82               	movlw	130
    231  00796A  6E0A               	movwf	??_main^0,c
    232  00796C  0EDE               	movlw	222
-   233  00796E                     u557:
+   233  00796E                     u587:
    234  00796E  2EE8               	decfsz	wreg,f,c
-   235  007970  D7FE               	bra	u557
+   235  007970  D7FE               	bra	u587
    236  007972  2E0A               	decfsz	??_main^0,f,c
-   237  007974  D7FC               	bra	u557
+   237  007974  D7FC               	bra	u587
    238  007976                     
    239                           ;secuencia_main.c: 45:             if(++efecto==5){efecto=1;}
    240  007976  2A10               	incf	_efecto^0,f,c
@@ -457,11 +457,11 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    441  007EE0  0E82               	movlw	130
    442  007EE2  6E01               	movwf	??_secuencial_Efecto4^0,c
    443  007EE4  0EDE               	movlw	222
-   444  007EE6                     u567:
+   444  007EE6                     u597:
    445  007EE6  2EE8               	decfsz	wreg,f,c
-   446  007EE8  D7FE               	bra	u567
+   446  007EE8  D7FE               	bra	u597
    447  007EEA  2E01               	decfsz	??_secuencial_Efecto4^0,f,c
-   448  007EEC  D7FC               	bra	u567
+   448  007EEC  D7FC               	bra	u597
    449  007EEE  EFC7  F03F         	goto	l928
    450  007EF2                     l916:
    451  007EF2  0E02               	movlw	2
@@ -480,13 +480,13 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    464  007F0E  0E04               	movlw	4
    465  007F10  6E01               	movwf	??_secuencial_Efecto4^0,c
    466  007F12  0EBA               	movlw	186
-   467  007F14                     u577:
+   467  007F14                     u607:
    468  007F14  2EE8               	decfsz	wreg,f,c
-   469  007F16  D7FE               	bra	u577
+   469  007F16  D7FE               	bra	u607
    470  007F18  2E01               	decfsz	??_secuencial_Efecto4^0,f,c
-   471  007F1A  D7FC               	bra	u577
+   471  007F1A  D7FC               	bra	u607
    472  007F1C  2E02               	decfsz	(??_secuencial_Efecto4+1)^0,f,c
-   473  007F1E  D7FA               	bra	u577
+   473  007F1E  D7FA               	bra	u607
    474  007F20  D000               	nop2	
    475  007F22  EFC7  F03F         	goto	l928
    476  007F26                     l920:
@@ -506,13 +506,13 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    490  007F42  0E08               	movlw	8
    491  007F44  6E01               	movwf	??_secuencial_Efecto4^0,c
    492  007F46  0E77               	movlw	119
-   493  007F48                     u587:
+   493  007F48                     u617:
    494  007F48  2EE8               	decfsz	wreg,f,c
-   495  007F4A  D7FE               	bra	u587
+   495  007F4A  D7FE               	bra	u617
    496  007F4C  2E01               	decfsz	??_secuencial_Efecto4^0,f,c
-   497  007F4E  D7FC               	bra	u587
+   497  007F4E  D7FC               	bra	u617
    498  007F50  2E02               	decfsz	(??_secuencial_Efecto4+1)^0,f,c
-   499  007F52  D7FA               	bra	u587
+   499  007F52  D7FA               	bra	u617
    500  007F54  F000               	nop	
    501  007F56  EFC7  F03F         	goto	l928
    502  007F5A                     l924:
@@ -532,13 +532,13 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    516  007F76  0E0F               	movlw	15
    517  007F78  6E01               	movwf	??_secuencial_Efecto4^0,c
    518  007F7A  0EF1               	movlw	241
-   519  007F7C                     u597:
+   519  007F7C                     u627:
    520  007F7C  2EE8               	decfsz	wreg,f,c
-   521  007F7E  D7FE               	bra	u597
+   521  007F7E  D7FE               	bra	u627
    522  007F80  2E01               	decfsz	??_secuencial_Efecto4^0,f,c
-   523  007F82  D7FC               	bra	u597
+   523  007F82  D7FC               	bra	u627
    524  007F84  2E02               	decfsz	(??_secuencial_Efecto4+1)^0,f,c
-   525  007F86  D7FA               	bra	u597
+   525  007F86  D7FA               	bra	u627
    526  007F88  F000               	nop	
    527  007F8A  EFC7  F03F         	goto	l928
    528  007F8E                     l92:
@@ -556,11 +556,11 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    540  007F9C  0E82               	movlw	130
    541  007F9E  6E01               	movwf	??_secuencial_Efecto4^0,c
    542  007FA0  0EDE               	movlw	222
-   543  007FA2                     u607:
+   543  007FA2                     u637:
    544  007FA2  2EE8               	decfsz	wreg,f,c
-   545  007FA4  D7FE               	bra	u607
+   545  007FA4  D7FE               	bra	u637
    546  007FA6  2E01               	decfsz	??_secuencial_Efecto4^0,f,c
-   547  007FA8  D7FC               	bra	u607
+   547  007FA8  D7FC               	bra	u637
    548  007FAA                     
    549                           ;secuencia_main.c: 124:             if(++velocidad==5){velocidad=1;}
    550  007FAA  0E01               	movlw	1
@@ -695,11 +695,11 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    678  007BBC  0E82               	movlw	130
    679  007BBE  6E01               	movwf	??_secuencial_Efecto3^0,c
    680  007BC0  0EDE               	movlw	222
-   681  007BC2                     u617:
+   681  007BC2                     u647:
    682  007BC2  2EE8               	decfsz	wreg,f,c
-   683  007BC4  D7FE               	bra	u617
+   683  007BC4  D7FE               	bra	u647
    684  007BC6  2E01               	decfsz	??_secuencial_Efecto3^0,f,c
-   685  007BC8  D7FC               	bra	u617
+   685  007BC8  D7FC               	bra	u647
    686  007BCA  EF35  F03E         	goto	l894
    687  007BCE                     l882:
    688  007BCE  0E02               	movlw	2
@@ -718,13 +718,13 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    701  007BEA  0E04               	movlw	4
    702  007BEC  6E01               	movwf	??_secuencial_Efecto3^0,c
    703  007BEE  0EBA               	movlw	186
-   704  007BF0                     u627:
+   704  007BF0                     u657:
    705  007BF0  2EE8               	decfsz	wreg,f,c
-   706  007BF2  D7FE               	bra	u627
+   706  007BF2  D7FE               	bra	u657
    707  007BF4  2E01               	decfsz	??_secuencial_Efecto3^0,f,c
-   708  007BF6  D7FC               	bra	u627
+   708  007BF6  D7FC               	bra	u657
    709  007BF8  2E02               	decfsz	(??_secuencial_Efecto3+1)^0,f,c
-   710  007BFA  D7FA               	bra	u627
+   710  007BFA  D7FA               	bra	u657
    711  007BFC  D000               	nop2	
    712  007BFE  EF35  F03E         	goto	l894
    713  007C02                     l886:
@@ -744,13 +744,13 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    727  007C1E  0E08               	movlw	8
    728  007C20  6E01               	movwf	??_secuencial_Efecto3^0,c
    729  007C22  0E77               	movlw	119
-   730  007C24                     u637:
+   730  007C24                     u667:
    731  007C24  2EE8               	decfsz	wreg,f,c
-   732  007C26  D7FE               	bra	u637
+   732  007C26  D7FE               	bra	u667
    733  007C28  2E01               	decfsz	??_secuencial_Efecto3^0,f,c
-   734  007C2A  D7FC               	bra	u637
+   734  007C2A  D7FC               	bra	u667
    735  007C2C  2E02               	decfsz	(??_secuencial_Efecto3+1)^0,f,c
-   736  007C2E  D7FA               	bra	u637
+   736  007C2E  D7FA               	bra	u667
    737  007C30  F000               	nop	
    738  007C32  EF35  F03E         	goto	l894
    739  007C36                     l890:
@@ -770,13 +770,13 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    753  007C52  0E0F               	movlw	15
    754  007C54  6E01               	movwf	??_secuencial_Efecto3^0,c
    755  007C56  0EF1               	movlw	241
-   756  007C58                     u647:
+   756  007C58                     u677:
    757  007C58  2EE8               	decfsz	wreg,f,c
-   758  007C5A  D7FE               	bra	u647
+   758  007C5A  D7FE               	bra	u677
    759  007C5C  2E01               	decfsz	??_secuencial_Efecto3^0,f,c
-   760  007C5E  D7FC               	bra	u647
+   760  007C5E  D7FC               	bra	u677
    761  007C60  2E02               	decfsz	(??_secuencial_Efecto3+1)^0,f,c
-   762  007C62  D7FA               	bra	u647
+   762  007C62  D7FA               	bra	u677
    763  007C64  F000               	nop	
    764  007C66  EF35  F03E         	goto	l894
    765  007C6A                     l78:
@@ -794,11 +794,11 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    777  007C78  0E82               	movlw	130
    778  007C7A  6E01               	movwf	??_secuencial_Efecto3^0,c
    779  007C7C  0EDE               	movlw	222
-   780  007C7E                     u657:
+   780  007C7E                     u687:
    781  007C7E  2EE8               	decfsz	wreg,f,c
-   782  007C80  D7FE               	bra	u657
+   782  007C80  D7FE               	bra	u687
    783  007C82  2E01               	decfsz	??_secuencial_Efecto3^0,f,c
-   784  007C84  D7FC               	bra	u657
+   784  007C84  D7FC               	bra	u687
    785  007C86                     
    786                           ;secuencia_main.c: 106:             if(++velocidad==5){velocidad=1;}
    787  007C86  0E01               	movlw	1
@@ -940,11 +940,11 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    922  007D40  0E82               	movlw	130
    923  007D42  6E01               	movwf	??_secuencial_Efecto2^0,c
    924  007D44  0EDE               	movlw	222
-   925  007D46                     u667:
+   925  007D46                     u697:
    926  007D46  2EE8               	decfsz	wreg,f,c
-   927  007D48  D7FE               	bra	u667
+   927  007D48  D7FE               	bra	u697
    928  007D4A  2E01               	decfsz	??_secuencial_Efecto2^0,f,c
-   929  007D4C  D7FC               	bra	u667
+   929  007D4C  D7FC               	bra	u697
    930  007D4E  EFF7  F03E         	goto	l858
    931  007D52                     l846:
    932  007D52  0E02               	movlw	2
@@ -963,13 +963,13 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    945  007D6E  0E04               	movlw	4
    946  007D70  6E01               	movwf	??_secuencial_Efecto2^0,c
    947  007D72  0EBA               	movlw	186
-   948  007D74                     u677:
+   948  007D74                     u707:
    949  007D74  2EE8               	decfsz	wreg,f,c
-   950  007D76  D7FE               	bra	u677
+   950  007D76  D7FE               	bra	u707
    951  007D78  2E01               	decfsz	??_secuencial_Efecto2^0,f,c
-   952  007D7A  D7FC               	bra	u677
+   952  007D7A  D7FC               	bra	u707
    953  007D7C  2E02               	decfsz	(??_secuencial_Efecto2+1)^0,f,c
-   954  007D7E  D7FA               	bra	u677
+   954  007D7E  D7FA               	bra	u707
    955  007D80  D000               	nop2	
    956  007D82  EFF7  F03E         	goto	l858
    957  007D86                     l850:
@@ -989,13 +989,13 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    971  007DA2  0E08               	movlw	8
    972  007DA4  6E01               	movwf	??_secuencial_Efecto2^0,c
    973  007DA6  0E77               	movlw	119
-   974  007DA8                     u687:
+   974  007DA8                     u717:
    975  007DA8  2EE8               	decfsz	wreg,f,c
-   976  007DAA  D7FE               	bra	u687
+   976  007DAA  D7FE               	bra	u717
    977  007DAC  2E01               	decfsz	??_secuencial_Efecto2^0,f,c
-   978  007DAE  D7FC               	bra	u687
+   978  007DAE  D7FC               	bra	u717
    979  007DB0  2E02               	decfsz	(??_secuencial_Efecto2+1)^0,f,c
-   980  007DB2  D7FA               	bra	u687
+   980  007DB2  D7FA               	bra	u717
    981  007DB4  F000               	nop	
    982  007DB6  EFF7  F03E         	goto	l858
    983  007DBA                     l854:
@@ -1015,13 +1015,13 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
    997  007DD6  0E0F               	movlw	15
    998  007DD8  6E01               	movwf	??_secuencial_Efecto2^0,c
    999  007DDA  0EF1               	movlw	241
-  1000  007DDC                     u697:
+  1000  007DDC                     u727:
   1001  007DDC  2EE8               	decfsz	wreg,f,c
-  1002  007DDE  D7FE               	bra	u697
+  1002  007DDE  D7FE               	bra	u727
   1003  007DE0  2E01               	decfsz	??_secuencial_Efecto2^0,f,c
-  1004  007DE2  D7FC               	bra	u697
+  1004  007DE2  D7FC               	bra	u727
   1005  007DE4  2E02               	decfsz	(??_secuencial_Efecto2+1)^0,f,c
-  1006  007DE6  D7FA               	bra	u697
+  1006  007DE6  D7FA               	bra	u727
   1007  007DE8  F000               	nop	
   1008  007DEA  EFF7  F03E         	goto	l858
   1009  007DEE                     l64:
@@ -1039,11 +1039,11 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   1021  007DFC  0E82               	movlw	130
   1022  007DFE  6E01               	movwf	??_secuencial_Efecto2^0,c
   1023  007E00  0EDE               	movlw	222
-  1024  007E02                     u707:
+  1024  007E02                     u737:
   1025  007E02  2EE8               	decfsz	wreg,f,c
-  1026  007E04  D7FE               	bra	u707
+  1026  007E04  D7FE               	bra	u737
   1027  007E06  2E01               	decfsz	??_secuencial_Efecto2^0,f,c
-  1028  007E08  D7FC               	bra	u707
+  1028  007E08  D7FC               	bra	u737
   1029  007E0A                     
   1030                           ;secuencia_main.c: 91:             if(++velocidad==5){velocidad=1;}
   1031  007E0A  0E01               	movlw	1
@@ -1171,11 +1171,11 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   1152  007A5A  0E82               	movlw	130
   1153  007A5C  6E01               	movwf	??_secuencial_Efecto1^0,c
   1154  007A5E  0EDE               	movlw	222
-  1155  007A60                     u717:
+  1155  007A60                     u747:
   1156  007A60  2EE8               	decfsz	wreg,f,c
-  1157  007A62  D7FE               	bra	u717
+  1157  007A62  D7FE               	bra	u747
   1158  007A64  2E01               	decfsz	??_secuencial_Efecto1^0,f,c
-  1159  007A66  D7FC               	bra	u717
+  1159  007A66  D7FC               	bra	u747
   1160  007A68  EF84  F03D         	goto	l824
   1161  007A6C                     l812:
   1162  007A6C  0E02               	movlw	2
@@ -1194,13 +1194,13 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   1175  007A88  0E04               	movlw	4
   1176  007A8A  6E01               	movwf	??_secuencial_Efecto1^0,c
   1177  007A8C  0EBA               	movlw	186
-  1178  007A8E                     u727:
+  1178  007A8E                     u757:
   1179  007A8E  2EE8               	decfsz	wreg,f,c
-  1180  007A90  D7FE               	bra	u727
+  1180  007A90  D7FE               	bra	u757
   1181  007A92  2E01               	decfsz	??_secuencial_Efecto1^0,f,c
-  1182  007A94  D7FC               	bra	u727
+  1182  007A94  D7FC               	bra	u757
   1183  007A96  2E02               	decfsz	(??_secuencial_Efecto1+1)^0,f,c
-  1184  007A98  D7FA               	bra	u727
+  1184  007A98  D7FA               	bra	u757
   1185  007A9A  D000               	nop2	
   1186  007A9C  EF84  F03D         	goto	l824
   1187  007AA0                     l816:
@@ -1220,13 +1220,13 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   1201  007ABC  0E08               	movlw	8
   1202  007ABE  6E01               	movwf	??_secuencial_Efecto1^0,c
   1203  007AC0  0E77               	movlw	119
-  1204  007AC2                     u737:
+  1204  007AC2                     u767:
   1205  007AC2  2EE8               	decfsz	wreg,f,c
-  1206  007AC4  D7FE               	bra	u737
+  1206  007AC4  D7FE               	bra	u767
   1207  007AC6  2E01               	decfsz	??_secuencial_Efecto1^0,f,c
-  1208  007AC8  D7FC               	bra	u737
+  1208  007AC8  D7FC               	bra	u767
   1209  007ACA  2E02               	decfsz	(??_secuencial_Efecto1+1)^0,f,c
-  1210  007ACC  D7FA               	bra	u737
+  1210  007ACC  D7FA               	bra	u767
   1211  007ACE  F000               	nop	
   1212  007AD0  EF84  F03D         	goto	l824
   1213  007AD4                     l820:
@@ -1246,13 +1246,13 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   1227  007AF0  0E0F               	movlw	15
   1228  007AF2  6E01               	movwf	??_secuencial_Efecto1^0,c
   1229  007AF4  0EF1               	movlw	241
-  1230  007AF6                     u747:
+  1230  007AF6                     u777:
   1231  007AF6  2EE8               	decfsz	wreg,f,c
-  1232  007AF8  D7FE               	bra	u747
+  1232  007AF8  D7FE               	bra	u777
   1233  007AFA  2E01               	decfsz	??_secuencial_Efecto1^0,f,c
-  1234  007AFC  D7FC               	bra	u747
+  1234  007AFC  D7FC               	bra	u777
   1235  007AFE  2E02               	decfsz	(??_secuencial_Efecto1+1)^0,f,c
-  1236  007B00  D7FA               	bra	u747
+  1236  007B00  D7FA               	bra	u777
   1237  007B02  F000               	nop	
   1238  007B04  EF84  F03D         	goto	l824
   1239  007B08                     l50:
@@ -1270,11 +1270,11 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   1251  007B16  0E82               	movlw	130
   1252  007B18  6E01               	movwf	??_secuencial_Efecto1^0,c
   1253  007B1A  0EDE               	movlw	222
-  1254  007B1C                     u757:
+  1254  007B1C                     u787:
   1255  007B1C  2EE8               	decfsz	wreg,f,c
-  1256  007B1E  D7FE               	bra	u757
+  1256  007B1E  D7FE               	bra	u787
   1257  007B20  2E01               	decfsz	??_secuencial_Efecto1^0,f,c
-  1258  007B22  D7FC               	bra	u757
+  1258  007B22  D7FC               	bra	u787
   1259  007B24                     
   1260                           ;secuencia_main.c: 76:             if(++velocidad==5){velocidad=1;}
   1261  007B24  0E01               	movlw	1
@@ -1664,7 +1664,7 @@ CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V2.31 build 20201012212115 
-Symbol Table                                                                                   Wed Nov 18 17:49:39 2020
+Symbol Table                                                                                   Wed Nov 18 18:09:43 2020
 
                          l50 7B08                           l70 7E4C                           l56 7B60  
                          l64 7DEE                           l84 7CC2                           l92 7F8E  
@@ -1717,14 +1717,14 @@ Symbol Table                                                                    
                         u360 798A                          u281 7EDC                          u265 7E7E  
                         u361 7986                          u194 7B9C                          u290 7F0A  
                         u274 7EB4                          u195 7B98                          u291 7F06  
-                        u275 7EAE                          u607 7FA2                          u617 7BC2  
-                        u707 7E02                          u627 7BF0                          u717 7A60  
-                        u637 7C24                          u557 796E                          u727 7A8E  
-                        u647 7C58                          u567 7EE6                          u737 7AC2  
-                        u657 7C7E                          u577 7F14                          u747 7AF6  
-                        u667 7D46                          u587 7F48                          u757 7B1C  
-                        u677 7D74                          u597 7F7C                          u687 7DA8  
-                        u697 7DDC                          wreg 000FE8                         l1050 79C6  
+                        u275 7EAE                          u607 7F14                          u617 7F48  
+                        u707 7D74                          u627 7F7C                          u717 7DA8  
+                        u637 7FA2                          u727 7DDC                          u647 7BC2  
+                        u737 7E02                          u657 7BF0                          u747 7A60  
+                        u667 7C24                          u587 796E                          u757 7A8E  
+                        u677 7C58                          u597 7EE6                          u767 7AC2  
+                        u687 7C7E                          u777 7AF6                          u697 7D46  
+                        u787 7B1C                          wreg 000FE8                         l1050 79C6  
                        _LATD 000F8C                         _main 794C                         fsr1l 000FE1  
                        start 0000                 ___param_bank 000000                        ?_main 0001  
                       _TRISD 000F95                        tablat 000FF5                        status 000FD8  

@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\SONY-V~1\AppData\Local\Temp\sci0.o
+$C:\Users\SONY-V~1\AppData\Local\Temp\scdo.o
 idloc IDLOC 5 200000 200000 8 1
 init CODE 0 0 0 4 1
 config CONFIG 4 300000 300000 E 1
@@ -134,28 +134,28 @@ $dist/default/debug\gpio.X.debug.o
 79AA text0 CODE >55:C:\Users\SONY-VAIO\Documents\GitHub\ArquiCampTaller1\GPIO\gpio.X\secuencia_main.c
 79AE text0 CODE >56:C:\Users\SONY-VAIO\Documents\GitHub\ArquiCampTaller1\GPIO\gpio.X\secuencia_main.c
 79B2 text0 CODE >61:C:\Users\SONY-VAIO\Documents\GitHub\ArquiCampTaller1\GPIO\gpio.X\secuencia_main.c
-7922 cinit CODE >523:C:\Users\SONY-V~1\AppData\Local\Temp\sci0.s
-7922 cinit CODE >525:C:\Users\SONY-V~1\AppData\Local\Temp\sci0.s
-7922 cinit CODE >528:C:\Users\SONY-V~1\AppData\Local\Temp\sci0.s
-7922 cinit CODE >549:C:\Users\SONY-V~1\AppData\Local\Temp\sci0.s
-7924 cinit CODE >550:C:\Users\SONY-V~1\AppData\Local\Temp\sci0.s
-7926 cinit CODE >551:C:\Users\SONY-V~1\AppData\Local\Temp\sci0.s
-7928 cinit CODE >552:C:\Users\SONY-V~1\AppData\Local\Temp\sci0.s
-792A cinit CODE >553:C:\Users\SONY-V~1\AppData\Local\Temp\sci0.s
-792C cinit CODE >554:C:\Users\SONY-V~1\AppData\Local\Temp\sci0.s
-792E cinit CODE >555:C:\Users\SONY-V~1\AppData\Local\Temp\sci0.s
-7932 cinit CODE >556:C:\Users\SONY-V~1\AppData\Local\Temp\sci0.s
-7936 cinit CODE >557:C:\Users\SONY-V~1\AppData\Local\Temp\sci0.s
-7936 cinit CODE >558:C:\Users\SONY-V~1\AppData\Local\Temp\sci0.s
-7938 cinit CODE >559:C:\Users\SONY-V~1\AppData\Local\Temp\sci0.s
-793C cinit CODE >560:C:\Users\SONY-V~1\AppData\Local\Temp\sci0.s
-793E cinit CODE >561:C:\Users\SONY-V~1\AppData\Local\Temp\sci0.s
-7940 cinit CODE >562:C:\Users\SONY-V~1\AppData\Local\Temp\sci0.s
-7942 cinit CODE >568:C:\Users\SONY-V~1\AppData\Local\Temp\sci0.s
-7942 cinit CODE >571:C:\Users\SONY-V~1\AppData\Local\Temp\sci0.s
-7944 cinit CODE >572:C:\Users\SONY-V~1\AppData\Local\Temp\sci0.s
-7946 cinit CODE >573:C:\Users\SONY-V~1\AppData\Local\Temp\sci0.s
-7948 cinit CODE >574:C:\Users\SONY-V~1\AppData\Local\Temp\sci0.s
+7922 cinit CODE >523:C:\Users\SONY-V~1\AppData\Local\Temp\scdo.s
+7922 cinit CODE >525:C:\Users\SONY-V~1\AppData\Local\Temp\scdo.s
+7922 cinit CODE >528:C:\Users\SONY-V~1\AppData\Local\Temp\scdo.s
+7922 cinit CODE >549:C:\Users\SONY-V~1\AppData\Local\Temp\scdo.s
+7924 cinit CODE >550:C:\Users\SONY-V~1\AppData\Local\Temp\scdo.s
+7926 cinit CODE >551:C:\Users\SONY-V~1\AppData\Local\Temp\scdo.s
+7928 cinit CODE >552:C:\Users\SONY-V~1\AppData\Local\Temp\scdo.s
+792A cinit CODE >553:C:\Users\SONY-V~1\AppData\Local\Temp\scdo.s
+792C cinit CODE >554:C:\Users\SONY-V~1\AppData\Local\Temp\scdo.s
+792E cinit CODE >555:C:\Users\SONY-V~1\AppData\Local\Temp\scdo.s
+7932 cinit CODE >556:C:\Users\SONY-V~1\AppData\Local\Temp\scdo.s
+7936 cinit CODE >557:C:\Users\SONY-V~1\AppData\Local\Temp\scdo.s
+7936 cinit CODE >558:C:\Users\SONY-V~1\AppData\Local\Temp\scdo.s
+7938 cinit CODE >559:C:\Users\SONY-V~1\AppData\Local\Temp\scdo.s
+793C cinit CODE >560:C:\Users\SONY-V~1\AppData\Local\Temp\scdo.s
+793E cinit CODE >561:C:\Users\SONY-V~1\AppData\Local\Temp\scdo.s
+7940 cinit CODE >562:C:\Users\SONY-V~1\AppData\Local\Temp\scdo.s
+7942 cinit CODE >568:C:\Users\SONY-V~1\AppData\Local\Temp\scdo.s
+7942 cinit CODE >571:C:\Users\SONY-V~1\AppData\Local\Temp\scdo.s
+7944 cinit CODE >572:C:\Users\SONY-V~1\AppData\Local\Temp\scdo.s
+7946 cinit CODE >573:C:\Users\SONY-V~1\AppData\Local\Temp\scdo.s
+7948 cinit CODE >574:C:\Users\SONY-V~1\AppData\Local\Temp\scdo.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -174,22 +174,22 @@ __Hspace_1 11 0 ABS 0 - dist/default/debug\gpio.X.debug.o
 __Hspace_2 0 0 ABS 0 - dist/default/debug\gpio.X.debug.o
 __Hspace_4 60000E 0 ABS 0 - dist/default/debug\gpio.X.debug.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/debug\gpio.X.debug.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\SONY-V~1\AppData\Local\Temp\sci0.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\SONY-V~1\AppData\Local\Temp\scdo.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\gpio.X.debug.o
 __Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/debug\gpio.X.debug.o
 _LATD F8C 0 ABS 0 - dist/default/debug\gpio.X.debug.o
-___sp 0 0 STACK 2 stack C:\Users\SONY-V~1\AppData\Local\Temp\sci0.o
+___sp 0 0 STACK 2 stack C:\Users\SONY-V~1\AppData\Local\Temp\scdo.o
 _main 794C 0 CODE 0 text0 dist/default/debug\gpio.X.debug.o
-start 0 0 CODE 0 init C:\Users\SONY-V~1\AppData\Local\Temp\sci0.o
+start 0 0 CODE 0 init C:\Users\SONY-V~1\AppData\Local\Temp\scdo.o
 __size_of_main 0 0 ABS 0 - dist/default/debug\gpio.X.debug.o
 __Hpowerup 0 0 CODE 0 powerup dist/default/debug\gpio.X.debug.o
 __HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/debug\gpio.X.debug.o
 _velocidad C 0 COMRAM 1 dataCOMRAM dist/default/debug\gpio.X.debug.o
-__accesstop 60 0 ABS 0 - C:\Users\SONY-V~1\AppData\Local\Temp\sci0.o
-intlevel0 0 0 CODE 0 text C:\Users\SONY-V~1\AppData\Local\Temp\sci0.o
-intlevel1 0 0 CODE 0 text C:\Users\SONY-V~1\AppData\Local\Temp\sci0.o
-intlevel2 0 0 CODE 0 text C:\Users\SONY-V~1\AppData\Local\Temp\sci0.o
-intlevel3 0 0 CODE 0 text C:\Users\SONY-V~1\AppData\Local\Temp\sci0.o
+__accesstop 60 0 ABS 0 - C:\Users\SONY-V~1\AppData\Local\Temp\scdo.o
+intlevel0 0 0 CODE 0 text C:\Users\SONY-V~1\AppData\Local\Temp\scdo.o
+intlevel1 0 0 CODE 0 text C:\Users\SONY-V~1\AppData\Local\Temp\scdo.o
+intlevel2 0 0 CODE 0 text C:\Users\SONY-V~1\AppData\Local\Temp\scdo.o
+intlevel3 0 0 CODE 0 text C:\Users\SONY-V~1\AppData\Local\Temp\scdo.o
 __end_of_secuencial_Efecto1 7B62 0 CODE 0 text4 dist/default/debug\gpio.X.debug.o
 __end_of_secuencial_Efecto2 7E4E 0 CODE 0 text3 dist/default/debug\gpio.X.debug.o
 __end_of_secuencial_Efecto3 7CC4 0 CODE 0 text2 dist/default/debug\gpio.X.debug.o
@@ -198,8 +198,8 @@ __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\gpio.X.debug.o
 __Hifardata 0 0 CODE 0 ifardata dist/default/debug\gpio.X.debug.o
 __Hclrtext 0 0 ABS 0 clrtext dist/default/debug\gpio.X.debug.o
 __pidataCOMRAM 791D 0 CODE 0 idataCOMRAM dist/default/debug\gpio.X.debug.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\SONY-V~1\AppData\Local\Temp\sci0.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\SONY-V~1\AppData\Local\Temp\sci0.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\SONY-V~1\AppData\Local\Temp\scdo.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\SONY-V~1\AppData\Local\Temp\scdo.o
 __LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/debug\gpio.X.debug.o
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/debug\gpio.X.debug.o
 _secuencial_Efecto1 7A00 0 CODE 0 text4 dist/default/debug\gpio.X.debug.o
@@ -239,7 +239,7 @@ __Htext3 0 0 ABS 0 text3 dist/default/debug\gpio.X.debug.o
 __Htext4 0 0 ABS 0 text4 dist/default/debug\gpio.X.debug.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\gpio.X.debug.o
 __Hbigram 0 0 ABS 0 bigram dist/default/debug\gpio.X.debug.o
-__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\SONY-V~1\AppData\Local\Temp\sci0.o
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\SONY-V~1\AppData\Local\Temp\scdo.o
 __Hcomram 0 0 ABS 0 comram dist/default/debug\gpio.X.debug.o
 __Hconfig 30000E 0 CONFIG 4 config dist/default/debug\gpio.X.debug.o
 __Lbank0 0 0 ABS 0 bank0 dist/default/debug\gpio.X.debug.o
@@ -307,8 +307,8 @@ __Lcomram 0 0 ABS 0 comram dist/default/debug\gpio.X.debug.o
 __Lconfig 0 0 CONFIG 4 config dist/default/debug\gpio.X.debug.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/debug\gpio.X.debug.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/debug\gpio.X.debug.o
-stackhi 7FF 0 ABS 0 - C:\Users\SONY-V~1\AppData\Local\Temp\sci0.o
-stacklo 60 0 ABS 0 - C:\Users\SONY-V~1\AppData\Local\Temp\sci0.o
+stackhi 7FF 0 ABS 0 - C:\Users\SONY-V~1\AppData\Local\Temp\scdo.o
+stacklo 60 0 ABS 0 - C:\Users\SONY-V~1\AppData\Local\Temp\scdo.o
 __Lintcode 0 0 CODE 0 intcode dist/default/debug\gpio.X.debug.o
 __Lintret 0 0 ABS 0 intret dist/default/debug\gpio.X.debug.o
 __Lirdata 0 0 CODE 0 irdata dist/default/debug\gpio.X.debug.o
@@ -330,7 +330,7 @@ __ptext2 7B62 0 CODE 0 text2 dist/default/debug\gpio.X.debug.o
 __ptext3 7CC4 0 CODE 0 text3 dist/default/debug\gpio.X.debug.o
 __ptext4 7A00 0 CODE 0 text4 dist/default/debug\gpio.X.debug.o
 __Lstruct 0 0 COMRAM 1 struct dist/default/debug\gpio.X.debug.o
-__ramtop 800 0 RAM 0 ramtop C:\Users\SONY-V~1\AppData\Local\Temp\sci0.o
+__ramtop 800 0 RAM 0 ramtop C:\Users\SONY-V~1\AppData\Local\Temp\scdo.o
 __Lpowerup 0 0 CODE 0 powerup dist/default/debug\gpio.X.debug.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\gpio.X.debug.o
 __Lreset_vec 0 0 CODE 0 reset_vec dist/default/debug\gpio.X.debug.o
