@@ -42,7 +42,7 @@ int main(void) {
         //efecto
         if (!PORTBbits.RB7) {
             __delay_ms(50);
-            if(++efecto==5){efecto=1;}
+            if(++efecto==7){efecto=1;}
         }
         
         switch (efecto) {
@@ -54,9 +54,9 @@ int main(void) {
                 break;
             case 4: secuencial_Efecto4();
                 break;
-            case 5: secuencial_Efecto4();
+            case 5: secuencial_Efecto5();
                 break;
-            case 6: secuencial_Efecto4();
+            case 6: secuencial_Efecto6();
                 break;
         }
     }

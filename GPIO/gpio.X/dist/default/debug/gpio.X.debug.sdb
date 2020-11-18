@@ -37,6 +37,10 @@
 [v _secuencial_Efecto3 secuencial_Efecto3 `(v  1 e 1 0 ]
 "111
 [v _secuencial_Efecto4 secuencial_Efecto4 `(v  1 e 1 0 ]
+"129
+[v _secuencial_Efecto5 secuencial_Efecto5 `(v  1 e 1 0 ]
+"144
+[v _secuencial_Efecto6 secuencial_Efecto6 `(v  1 e 1 0 ]
 [s S35 . 1 `uc 1 RB0 1 0 :1:0 
 `uc 1 RB1 1 0 :1:1 
 `uc 1 RB2 1 0 :1:2 
@@ -104,6 +108,22 @@
 [v _main main `(i  1 e 2 0 ]
 {
 "64
+} 0
+"144
+[v _secuencial_Efecto6 secuencial_Efecto6 `(v  1 e 1 0 ]
+{
+"145
+[v secuencial_Efecto6@i i `i  1 a 2 6 ]
+[v secuencial_Efecto6@j j `i  1 a 2 4 ]
+"158
+} 0
+"129
+[v _secuencial_Efecto5 secuencial_Efecto5 `(v  1 e 1 0 ]
+{
+"130
+[v secuencial_Efecto5@i i `i  1 a 2 12 ]
+[v secuencial_Efecto5@j j `i  1 a 2 10 ]
+"143
 } 0
 "111
 [v _secuencial_Efecto4 secuencial_Efecto4 `(v  1 e 1 0 ]

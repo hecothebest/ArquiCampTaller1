@@ -75,6 +75,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "28
 [; ;secuencia_main.c: 28: void secuencial_Efecto4(void);
 [v _secuencial_Efecto4 `(v ~T0 @X0 0 ef ]
+"29
+[; ;secuencia_main.c: 29: void secuencial_Efecto5(void);
+[v _secuencial_Efecto5 `(v ~T0 @X0 0 ef ]
+"30
+[; ;secuencia_main.c: 30: void secuencial_Efecto6(void);
+[v _secuencial_Efecto6 `(v ~T0 @X0 0 ef ]
 "54 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 54: __asm("SPPDATA equ 0F62h");
 [; <" SPPDATA equ 0F62h ;# ">
@@ -701,8 +707,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;secuencia_main.c: 44:             _delay((unsigned long)((50)*(8000000/4000.0)));
 [e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
 "45
-[; ;secuencia_main.c: 45:             if(++efecto==5){efecto=1;}
-[e $ ! == -> =+ _efecto -> -> 1 `i `uc `i -> 5 `i 372  ]
+[; ;secuencia_main.c: 45:             if(++efecto==7){efecto=1;}
+[e $ ! == -> =+ _efecto -> -> 1 `i `uc `i -> 7 `i 372  ]
 {
 [e = _efecto -> -> 1 `i `uc ]
 }
@@ -744,16 +750,16 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;secuencia_main.c: 56:                 break;
 [e $U 373  ]
 "57
-[; ;secuencia_main.c: 57:             case 5: secuencial_Efecto4();
+[; ;secuencia_main.c: 57:             case 5: secuencial_Efecto5();
 [e :U 379 ]
-[e ( _secuencial_Efecto4 ..  ]
+[e ( _secuencial_Efecto5 ..  ]
 "58
 [; ;secuencia_main.c: 58:                 break;
 [e $U 373  ]
 "59
-[; ;secuencia_main.c: 59:             case 6: secuencial_Efecto4();
+[; ;secuencia_main.c: 59:             case 6: secuencial_Efecto6();
 [e :U 380 ]
-[e ( _secuencial_Efecto4 ..  ]
+[e ( _secuencial_Efecto6 ..  ]
 "60
 [; ;secuencia_main.c: 60:                 break;
 [e $U 373  ]
@@ -1212,54 +1218,44 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _secuencial_Efecto6 ]
 [f ]
 "145
-[; ;secuencia_main.c: 145:     volatile unsigned int m=2,n=4;
-[v _m `Vui ~T0 @X0 1 a ]
-[e = _m -> -> 2 `i `ui ]
-[v _n `Vui ~T0 @X0 1 a ]
-[e = _n -> -> 4 `i `ui ]
-"146
-[; ;secuencia_main.c: 146:     for (int i = 2; i < 5; i++) {
+[; ;secuencia_main.c: 145:  for (int i = 0, j=2; i < 8; i++,j++) {
 {
 [v _i `i ~T0 @X0 1 a ]
-[e = _i -> 2 `i ]
-[e $ < _i -> 5 `i 447  ]
+[e = _i -> 0 `i ]
+[v _j `i ~T0 @X0 1 a ]
+[e = _j -> 2 `i ]
+[e $ < _i -> 8 `i 447  ]
 [e $U 448  ]
 [e :U 447 ]
 {
-"147
-[; ;secuencia_main.c: 147:         LATD = m+n;
-[e = _LATD -> + _m _n `uc ]
+"146
+[; ;secuencia_main.c: 146:         LATD = (1 << i) + (1 << j);
+[e = _LATD -> + << -> 1 `i _i << -> 1 `i _j `uc ]
 "148
-[; ;secuencia_main.c: 148:         m += (1 << i) & 0x0f;
-[e =+ _m -> & << -> 1 `i _i -> 15 `i `Vui ]
-"149
-[; ;secuencia_main.c: 149:         n += (1 << (4-i)) & 0xf0;
-[e =+ _n -> & << -> 1 `i - -> 4 `i _i -> 240 `i `Vui ]
-"150
-[; ;secuencia_main.c: 150:         if(velocidad==1){_delay((unsigned long)((50)*(8000000/4000.0)));}
+[; ;secuencia_main.c: 148:         if(velocidad==1){_delay((unsigned long)((50)*(8000000/4000.0)));}
 [e $ ! == _velocidad -> -> -> 1 `i `l `ul 450  ]
 {
 [e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
 }
 [e $U 451  ]
-"151
-[; ;secuencia_main.c: 151:         else if(velocidad==2){_delay((unsigned long)((100)*(8000000/4000.0)));}
+"149
+[; ;secuencia_main.c: 149:         else if(velocidad==2){_delay((unsigned long)((100)*(8000000/4000.0)));}
 [e :U 450 ]
 [e $ ! == _velocidad -> -> -> 2 `i `l `ul 452  ]
 {
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
 }
 [e $U 453  ]
-"152
-[; ;secuencia_main.c: 152:         else if(velocidad==3){_delay((unsigned long)((200)*(8000000/4000.0)));}
+"150
+[; ;secuencia_main.c: 150:         else if(velocidad==3){_delay((unsigned long)((200)*(8000000/4000.0)));}
 [e :U 452 ]
 [e $ ! == _velocidad -> -> -> 3 `i `l `ul 454  ]
 {
 [e ( __delay (1 -> * -> -> 200 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
 }
 [e $U 455  ]
-"153
-[; ;secuencia_main.c: 153:         else if(velocidad==4){_delay((unsigned long)((400)*(8000000/4000.0)));}
+"151
+[; ;secuencia_main.c: 151:         else if(velocidad==4){_delay((unsigned long)((400)*(8000000/4000.0)));}
 [e :U 454 ]
 [e $ ! == _velocidad -> -> -> 4 `i `l `ul 456  ]
 {
@@ -1269,32 +1265,32 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 455 ]
 [e :U 453 ]
 [e :U 451 ]
-"155
-[; ;secuencia_main.c: 155:         if (!PORTBbits.RB6) {
+"153
+[; ;secuencia_main.c: 153:         if (!PORTBbits.RB6) {
 [e $ ! ! != -> . . _PORTBbits 0 6 `i -> 0 `i 457  ]
 {
-"156
-[; ;secuencia_main.c: 156:             _delay((unsigned long)((50)*(8000000/4000.0)));
+"154
+[; ;secuencia_main.c: 154:             _delay((unsigned long)((50)*(8000000/4000.0)));
 [e ( __delay (1 -> * -> -> 50 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"157
-[; ;secuencia_main.c: 157:             if(++velocidad==5){velocidad=1;}
+"155
+[; ;secuencia_main.c: 155:             if(++velocidad==5){velocidad=1;}
 [e $ ! == =+ _velocidad -> -> -> 1 `i `l `ul -> -> -> 5 `i `l `ul 458  ]
 {
 [e = _velocidad -> -> -> 1 `i `l `ul ]
 }
 [e :U 458 ]
-"158
-[; ;secuencia_main.c: 158:         }
+"156
+[; ;secuencia_main.c: 156:         }
 }
 [e :U 457 ]
-"159
-[; ;secuencia_main.c: 159:     }
+"157
+[; ;secuencia_main.c: 157:     }
 }
-[e ++ _i -> 1 `i ]
-[e $ < _i -> 5 `i 447  ]
+[e ; ++ _i -> 1 `i ++ _j -> 1 `i ]
+[e $ < _i -> 8 `i 447  ]
 [e :U 448 ]
 }
-"160
-[; ;secuencia_main.c: 160: }
+"158
+[; ;secuencia_main.c: 158: }
 [e :UE 446 ]
 }

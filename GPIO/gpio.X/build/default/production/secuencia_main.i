@@ -5707,7 +5707,7 @@ int main(void) {
 
         if (!PORTBbits.RB7) {
             _delay((unsigned long)((50)*(8000000/4000.0)));
-            if(++efecto==5){efecto=1;}
+            if(++efecto==7){efecto=1;}
         }
 
         switch (efecto) {
@@ -5719,9 +5719,9 @@ int main(void) {
                 break;
             case 4: secuencial_Efecto4();
                 break;
-            case 5: secuencial_Efecto4();
+            case 5: secuencial_Efecto5();
                 break;
-            case 6: secuencial_Efecto4();
+            case 6: secuencial_Efecto6();
                 break;
         }
     }
@@ -5792,8 +5792,9 @@ void secuencial_Efecto4(void) {
 }
 
 void secuencial_Efecto5(void) {
-    for (int i = 1, j = 4; i < 3; i++, j--) {
-        LATD = (1 << i) + (1 << j);
+    for (int i = 0, j=2; i < 8; i++,j++) {
+        LATD = (1 << i) + (1 << i+1)+(1 << i+2)+(1 << i+3)+(1 << i+4);
+
         if(velocidad==1){_delay((unsigned long)((50)*(8000000/4000.0)));}
         else if(velocidad==2){_delay((unsigned long)((100)*(8000000/4000.0)));}
         else if(velocidad==3){_delay((unsigned long)((200)*(8000000/4000.0)));}
@@ -5805,13 +5806,10 @@ void secuencial_Efecto5(void) {
         }
     }
 }
-
 void secuencial_Efecto6(void) {
-    volatile unsigned int m=2,n=4;
-    for (int i = 2; i < 5; i++) {
-        LATD = m+n;
-        m += (1 << i) & 0x0f;
-        n += (1 << (4-i)) & 0xf0;
+ for (int i = 0, j=2; i < 8; i++,j++) {
+        LATD = (1 << i) + (1 << j);
+
         if(velocidad==1){_delay((unsigned long)((50)*(8000000/4000.0)));}
         else if(velocidad==2){_delay((unsigned long)((100)*(8000000/4000.0)));}
         else if(velocidad==3){_delay((unsigned long)((200)*(8000000/4000.0)));}
