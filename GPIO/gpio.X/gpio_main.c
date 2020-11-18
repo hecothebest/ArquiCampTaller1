@@ -63,5 +63,4 @@ int main(void) {
         if(!PORTBbits.RB6){LATDbits.LATD6=1;}else{LATDbits.LATD6=0;}
         if(!PORTBbits.RB7){LATDbits.LATD7=1;}else{LATDbits.LATD7=0;}
     }
-    return 1;
 }

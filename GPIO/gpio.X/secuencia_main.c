@@ -26,6 +26,8 @@ void secuencial_Efecto1(void);
 void secuencial_Efecto2(void);
 void secuencial_Efecto3(void);
 void secuencial_Efecto4(void);
+void secuencial_Efecto5(void);
+void secuencial_Efecto6(void);
 
 unsigned char efecto = 1;
 unsigned long velocidad = 1;
@@ -51,6 +53,10 @@ int main(void) {
             case 3: secuencial_Efecto3();
                 break;
             case 4: secuencial_Efecto4();
+                break;
+            case 5: secuencial_Efecto4();
+                break;
+            case 6: secuencial_Efecto4();
                 break;
         }
     }
@@ -108,6 +114,39 @@ void secuencial_Efecto4(void) {
         LATD = m+n;
         m += (1 << i) & 0x0f;
         n += (1 << (7-i)) & 0xf0;
+        if(velocidad==1){__delay_ms(50);}
+        else if(velocidad==2){__delay_ms(100);}
+        else if(velocidad==3){__delay_ms(200);}
+        else if(velocidad==4){__delay_ms(400);}
+        //velocidad
+        if (!PORTBbits.RB6) {
+            __delay_ms(50);
+            if(++velocidad==5){velocidad=1;}
+        }
+    }
+}
+
+void secuencial_Efecto5(void) {
+    for (int i = 1, j = 4; i < 3; i++, j--) {
+        LATD = (1 << i) + (1 << j);
+        if(velocidad==1){__delay_ms(50);}
+        else if(velocidad==2){__delay_ms(100);}
+        else if(velocidad==3){__delay_ms(200);}
+        else if(velocidad==4){__delay_ms(400);}
+        //velocidad
+        if (!PORTBbits.RB6) {
+            __delay_ms(50);
+            if(++velocidad==5){velocidad=1;}
+        }
+    }
+}
+
+void secuencial_Efecto6(void) {
+    volatile unsigned int m=0,n=0;
+    for (int i = 2; i < 5; i++) {
+        LATD = m+n;
+        m += (1 << i) & 0x0f;
+        n += (1 << (4-i)) & 0xf0;
         if(velocidad==1){__delay_ms(50);}
         else if(velocidad==2){__delay_ms(100);}
         else if(velocidad==3){__delay_ms(200);}
